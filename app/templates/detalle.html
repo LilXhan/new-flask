@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+
+{% block content %}
+    
+
+<div class="card col-md-4" style="width: 20rem;">
+    <img class="card-img-top" src="{{personaje.img}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{personaje.id}}</h5>
+      <h5 class="card-title">{{personaje.name}}</h5>
+      <h5 class="card-title">Estado: {{personaje.status}}</h5>
+      <h5 class="card-title">Especie(s): {{personaje.species}}</h5>
+      <h5 class="card-title">Genero: {{personaje.gender}}</h5>
+      <h5 class="card-title">Ultima locación: {{personaje.location}}</h5>
+    </div>
+  </div>
+   
+
+    
+{% endblock %}
