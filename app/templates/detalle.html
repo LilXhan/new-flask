@@ -2,8 +2,8 @@
 
 {% block content %}
     
-
-<div class="card col-md-4" style="width: 20rem;">
+<a href="{{url_for('personaje_router.personajes')}}">Volver a personajes</a>
+<div class="card" style="width: 20rem;">
     <img class="card-img-top" src="{{personaje.img}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{personaje.id}}</h5>

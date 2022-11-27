@@ -3,11 +3,12 @@
 {% block content %} 
 
 
-<div class="row">
+
+<div class="container">
 
     {% for person in data %} 
 
-    <div class="card col-md-4" style="width: 20rem;">
+    <div class="card" style="width: 20rem;">
         <img class="card-img-top" src="{{person.img}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{person.id}}</h5>
@@ -16,11 +17,7 @@
           <h5 class="card-title">Especie(s): {{person.species}}</h5>
           <h5 class="card-title">Genero: {{person.gender}}</h5>
           <h5 class="card-title">Ultima locación: {{person.location}}</h5>
-          <a
-          href="{{ url_for('personaje_router.detail_personaje', id=person.id) }}"
-          class="btn btn-info"
-          >Detail</a
-            >
+          <a href="{{ url_for('personaje_router.detail_personaje', id=person._id) }}" class="btn btn-info">Detalles</a>
         </div>
       </div>
 
